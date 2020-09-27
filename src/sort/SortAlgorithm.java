@@ -1,6 +1,8 @@
+package sort;
+
 @FunctionalInterface
 public interface SortAlgorithm {
-    int[] sort(int[] v);
+    int[] sort(int[] array);
 
     default void swap(int[] array, int i, int j) {
         int temp = array[i];

@@ -1,15 +1,17 @@
+package sort;
+
 public class QuickSort implements SortAlgorithm {
     @Override
-    public int[] sort(int[] v) {
-        sort(v, 0, v.length - 1);
-        return v;
+    public int[] sort(int[] array) {
+        sort(array, 0, array.length - 1);
+        return array;
     }
 
-    private void sort(int[] v, int left, int right) {
+    private void sort(int[] array, int left, int right) {
         if (left < right) {
-            int pivotIndex = partition(v, left, right);
-            sort(v, left, pivotIndex - 1);  
-            sort(v, pivotIndex + 1, right); 
+            int pivotIndex = partition(array, left, right);
+            sort(array, left, pivotIndex - 1);
+            sort(array, pivotIndex + 1, right);
         }
     }
 
