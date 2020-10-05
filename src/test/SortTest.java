@@ -28,6 +28,12 @@ public class SortTest {
     }
 
     @Test
+    public void gnomeSortTest() {
+        SortAlgorithm algorithm = new GnomeSort();
+        sort(algorithm);
+    }
+
+    @Test
     public void insertionSortTest() {
         SortAlgorithm algorithm = new InsertionSort();
         sort(algorithm);
