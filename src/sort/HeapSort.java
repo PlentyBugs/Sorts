@@ -24,4 +24,9 @@ public class HeapSort implements SortAlgorithm {
             heapify(array, n, largest);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Heap Sort";
+    }
 }

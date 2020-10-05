@@ -14,4 +14,9 @@ public class SelectionSort implements SortAlgorithm {
         }
         return array;
     }
+
+    @Override
+    public String toString() {
+        return "Selection Sort";
+    }
 }

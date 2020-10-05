@@ -28,4 +28,9 @@ public class MergeSort implements SortAlgorithm {
         while (j < right) temp[k++] = array[j++];
         System.arraycopy(temp, 0, array, left, temp.length);
     }
+
+    @Override
+    public String toString() {
+        return "Merge Sort";
+    }
 }

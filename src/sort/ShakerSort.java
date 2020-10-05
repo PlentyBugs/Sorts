@@ -15,4 +15,9 @@ public class ShakerSort implements SortAlgorithm {
         }
         return array;
     }
+
+    @Override
+    public String toString() {
+        return "Shaker Sort";
+    }
 }

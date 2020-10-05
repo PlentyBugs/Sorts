@@ -9,4 +9,9 @@ public class BubbleSort implements SortAlgorithm {
                     swap(array, i, j);
         return array;
     }
+
+    @Override
+    public String toString() {
+        return "Bubble Sort";
+    }
 }

@@ -27,4 +27,9 @@ public class QuickSort implements SortAlgorithm {
 
         return partitionIndex;
     }
+
+    @Override
+    public String toString() {
+        return "Quick Sort";
+    }
 }

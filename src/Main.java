@@ -20,7 +20,7 @@ public class Main {
             System.arraycopy(array, 0, arr, 0, n);
             long time = System.nanoTime();
             sort.sort(arr);
-            System.out.println(sort + " " + (System.nanoTime() - time) / 1_000_000_000.0 + "s");
+            System.out.println(sort + ": " + (System.nanoTime() - time) / 1_000_000_000.0 + "s");
         }
     }
 }
