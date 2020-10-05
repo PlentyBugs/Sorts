@@ -9,6 +9,7 @@ public class Main {
         }
         for (SortAlgorithm sort : new SortAlgorithm[]{
             new BubbleSort(),
+            new ShakerSort(),
             new InsertionSort(),
             new SelectionSort(),
             new HeapSort(),
