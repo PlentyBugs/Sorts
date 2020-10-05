@@ -1,4 +1,4 @@
-package sort;
+package main.sort;
 
 @FunctionalInterface
 public interface SortAlgorithm {

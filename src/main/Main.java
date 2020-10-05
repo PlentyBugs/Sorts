@@ -1,4 +1,6 @@
-import sort.*;
+package main;
+
+import main.sort.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,8 +18,8 @@ public class Main {
             new MergeSort(),
             new QuickSort()
         }) {
-            int[] arr = new int[n];
-            System.arraycopy(array, 0, arr, 0, n);
+            int[] arr = new int[array.length];
+            System.arraycopy(array, 0, arr, 0, arr.length);
             long time = System.nanoTime();
             sort.sort(arr);
             System.out.println(sort + ": " + (System.nanoTime() - time) / 1_000_000_000.0 + "s");

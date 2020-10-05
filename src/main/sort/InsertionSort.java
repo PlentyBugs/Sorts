@@ -1,4 +1,4 @@
-package sort;
+package main.sort;
 
 public class InsertionSort implements SortAlgorithm {
 

@@ -1,4 +1,4 @@
-package sort;
+package main.sort;
 
 public class QuickSort implements SortAlgorithm {
     @Override

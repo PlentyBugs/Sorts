@@ -1,4 +1,4 @@
-package sort;
+package main.sort;
 
 public class MergeSort implements SortAlgorithm {
 
