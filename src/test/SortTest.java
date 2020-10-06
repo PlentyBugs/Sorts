@@ -1,9 +1,9 @@
 package test;
 
 import main.sort.*;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions;
 
 public class SortTest {
 
@@ -56,8 +56,13 @@ public class SortTest {
     }
 
     @Test
-    public void quickSortTest() {
-        sort(new QuickSort());
+    public void quickSortIterativeTest() {
+        sort(new QuickSortIterative());
+    }
+
+    @Test
+    public void quickSortRecursiveTest() {
+        sort(new QuickSortRecursive());
     }
 
     private void sort(SortAlgorithm algorithm) {

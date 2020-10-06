@@ -18,7 +18,8 @@ public class Main {
             new SelectionSort(),
             new HeapSort(),
             new MergeSort(),
-            new QuickSort()
+            new QuickSortRecursive(),
+            new QuickSortIterative()
         }) {
             int[] arr = new int[array.length];
             System.arraycopy(array, 0, arr, 0, arr.length);
