@@ -19,7 +19,8 @@ public class Main {
             new HeapSort(),
             new MergeSort(),
             new QuickSortRecursive(),
-            new QuickSortIterative()
+            new QuickSortIterative(),
+            new QuickSortDualPivot()
         }) {
             int[] arr = new int[array.length];
             System.arraycopy(array, 0, arr, 0, arr.length);

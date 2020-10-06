@@ -65,6 +65,11 @@ public class SortTest {
         sort(new QuickSortRecursive());
     }
 
+    @Test
+    public void quickSortDoublePivotTest() {
+        sort(new QuickSortDualPivot());
+    }
+
     private void sort(SortAlgorithm algorithm) {
         algorithm.sort(array);
         Assertions.assertArrayEquals(array, CORRECT_ARRAY);
