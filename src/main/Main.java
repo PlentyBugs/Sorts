@@ -13,6 +13,7 @@ public class Main {
             new BubbleSort(),
             new ShakerSort(),
             new GnomeSort(),
+            new CombSort(),
             new InsertionSort(),
             new SelectionSort(),
             new HeapSort(),

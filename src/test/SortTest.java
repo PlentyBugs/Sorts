@@ -17,50 +17,47 @@ public class SortTest {
 
     @Test
     public void bubbleSortTest() {
-        SortAlgorithm algorithm = new BubbleSort();
-        sort(algorithm);
+        sort(new BubbleSort());
     }
 
     @Test
     public void shakerSortTest() {
-        SortAlgorithm algorithm = new ShakerSort();
-        sort(algorithm);
+        sort(new ShakerSort());
     }
 
     @Test
     public void gnomeSortTest() {
-        SortAlgorithm algorithm = new GnomeSort();
-        sort(algorithm);
+        sort(new GnomeSort());
+    }
+
+    @Test
+    public void combSortTest() {
+        sort(new CombSort());
     }
 
     @Test
     public void insertionSortTest() {
-        SortAlgorithm algorithm = new InsertionSort();
-        sort(algorithm);
+        sort(new InsertionSort());
     }
 
     @Test
     public void selectionSortTest() {
-        SortAlgorithm algorithm = new SelectionSort();
-        sort(algorithm);
+        sort(new SelectionSort());
     }
 
     @Test
     public void heapSortTest() {
-        SortAlgorithm algorithm = new HeapSort();
-        sort(algorithm);
+        sort(new HeapSort());
     }
 
     @Test
     public void mergeSortTest() {
-        SortAlgorithm algorithm = new MergeSort();
-        sort(algorithm);
+        sort(new MergeSort());
     }
 
     @Test
     public void quickSortTest() {
-        SortAlgorithm algorithm = new QuickSort();
-        sort(algorithm);
+        sort(new QuickSort());
     }
 
     private void sort(SortAlgorithm algorithm) {
