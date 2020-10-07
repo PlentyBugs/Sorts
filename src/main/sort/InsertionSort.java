@@ -1,21 +1,14 @@
 package main.sort;
 
-public class InsertionSort implements SortAlgorithm {
+public interface InsertionSort extends SortAlgorithm {
 
-    @Override
-    public int[] sort(int[] array) {
-        for (int i = 1; i < array.length; i++) {
-            int elem = array[i];
+    default void sort(int[] array, int left, int right) {
+        for (int i = left + 1; i < right; i++) {
+            int temp = array[i];
             int j = i - 1;
-            while (j >= 0 && array[j] > elem)
+            while (j >= left && array[j] > temp)
                 array[j + 1] = array[j--];
-            array[j + 1] = elem;
+            array[j + 1] = temp;
         }
-        return array;
-    }
-
-    @Override
-    public String toString() {
-        return "Insertion Sort";
     }
 }

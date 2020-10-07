@@ -1,22 +1,8 @@
 package main.sort;
 
-public class MergeSort implements SortAlgorithm {
+public interface MergeSort extends SortAlgorithm {
 
-    @Override
-    public int[] sort(int[] array) {
-        sort(array, 0, array.length);
-        return array;
-    }
-
-    private void sort(int[] array, int left, int right) {
-        if (right <= left + 1) return;
-        int middle = left + (right - left) / 2;
-        sort(array, left, middle);
-        sort(array, middle, right);
-        merge(array, left, middle, right);
-    }
-
-    private void merge(int[] array, int left, int middle, int right) {
+    default void merge(int[] array, int left, int middle, int right) {
         int i = left;
         int j = middle;
         int k = 0;
@@ -27,10 +13,5 @@ public class MergeSort implements SortAlgorithm {
         while (i < middle) temp[k++] = array[i++];
         while (j < right) temp[k++] = array[j++];
         System.arraycopy(temp, 0, array, left, temp.length);
-    }
-
-    @Override
-    public String toString() {
-        return "Merge Sort";
     }
 }

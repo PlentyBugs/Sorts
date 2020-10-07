@@ -36,8 +36,8 @@ public class SortTest {
     }
 
     @Test
-    public void insertionSortTest() {
-        sort(new InsertionSort());
+    public void insertionSortIterativeTest() {
+        sort(new InsertionSortIterative());
     }
 
     @Test
@@ -51,8 +51,8 @@ public class SortTest {
     }
 
     @Test
-    public void mergeSortTest() {
-        sort(new MergeSort());
+    public void mergeSortRecursiveTest() {
+        sort(new MergeSortRecursive());
     }
 
     @Test
