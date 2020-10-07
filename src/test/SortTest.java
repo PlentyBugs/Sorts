@@ -31,6 +31,11 @@ public class SortTest {
     }
 
     @Test
+    public void pigeonholeSortTest() {
+        sort(new PigeonholeSort());
+    }
+
+    @Test
     public void combSortTest() {
         sort(new CombSort());
     }
