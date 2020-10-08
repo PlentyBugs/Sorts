@@ -27,9 +27,13 @@ public class Main {
         }) {
             int[] arr = new int[array.length];
             System.arraycopy(array, 0, arr, 0, arr.length);
-            long time = System.nanoTime();
-            sort.sort(arr);
-            System.out.println(sort + ": " + (System.nanoTime() - time) / 1_000_000.0 + "ms");
+            measureTime(sort, arr);
         }
+    }
+
+    private static void measureTime(SortAlgorithm algorithm, int[] array) {
+        long time = System.nanoTime();
+        algorithm.sort(array);
+        System.out.println(algorithm + ": " + (System.nanoTime() - time) / 1_000_000.0 + "ms");
     }
 }
