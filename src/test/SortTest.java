@@ -31,6 +31,11 @@ public class SortTest {
     }
 
     @Test
+    public void cycleSortTest() {
+        sort(new CycleSort());
+    }
+
+    @Test
     public void pigeonholeSortTest() {
         sort(new PigeonholeSort());
     }

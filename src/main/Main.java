@@ -14,6 +14,7 @@ public class Main {
             new BubbleSort(),
             new ShakerSort(),
             new GnomeSort(),
+            new CycleSort(),
             new PigeonholeSort(),
             new CombSort(),
             new InsertionSortIterative(),
