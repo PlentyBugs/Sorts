@@ -39,4 +39,9 @@ public class CycleSort implements SortAlgorithm {
         }
         return array;
     }
+
+    @Override
+    public String toString() {
+        return "Cycle Sort";
+    }
 }
