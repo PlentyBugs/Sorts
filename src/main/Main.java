@@ -23,7 +23,8 @@ public class Main {
             new MergeSortRecursive(),
             new QuickSortRecursive(),
             new QuickSortIterative(),
-            new QuickSortDualPivot()
+            new QuickSortDualPivot(),
+            new RadixSort(),
         }) {
             int[] arr = new int[array.length];
             System.arraycopy(array, 0, arr, 0, arr.length);

@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 public class SortTest {
 
     private int[] array;
@@ -78,6 +80,11 @@ public class SortTest {
     @Test
     public void quickSortDoublePivotTest() {
         sort(new QuickSortDualPivot());
+    }
+
+    @Test
+    public void radixSortTest() {
+        sort(new RadixSort());
     }
 
     private void sort(SortAlgorithm algorithm) {
