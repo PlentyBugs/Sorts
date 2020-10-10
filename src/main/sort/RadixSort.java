@@ -1,7 +1,5 @@
 package main.sort;
 
-import java.util.Arrays;
-
 public class RadixSort implements SortAlgorithm {
     @Override
     public int[] sort(int[] array) {
