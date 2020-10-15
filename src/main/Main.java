@@ -19,6 +19,7 @@ public class Main {
             new CombSort(),
             new InsertionSortIterative(),
             new SelectionSort(),
+            new PancakeSort(),
             new HeapSort(),
             new MergeSortRecursive(),
             new QuickSortRecursive(),
