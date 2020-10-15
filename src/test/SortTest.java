@@ -56,6 +56,11 @@ public class SortTest {
     }
 
     @Test
+    public void pancakeSortTest() {
+        sort(new PancakeSort());
+    }
+
+    @Test
     public void heapSortTest() {
         sort(new HeapSort());
     }
