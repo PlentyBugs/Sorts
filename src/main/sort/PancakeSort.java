@@ -44,4 +44,9 @@ public class PancakeSort implements SortAlgorithm {
         for (int i = 0; i < (n + 1) / 2; i++)
             swap(array, i, n - i);
     }
+
+    @Override
+    public String toString() {
+        return "Pancake Sort";
+    }
 }
