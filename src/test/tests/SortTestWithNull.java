@@ -2,7 +2,7 @@ package test.tests;
 
 import test.SortTest;
 
-public class SoftTestWithNull extends SortTest {
+public class SortTestWithNull extends SortTest {
 
     @Override
     protected int[] getCorrectArray() {
