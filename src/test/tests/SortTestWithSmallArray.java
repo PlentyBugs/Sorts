@@ -4,9 +4,11 @@ import test.SortTest;
 
 public class SortTestWithSmallArray extends SortTest {
 
+    private static final int[] CORRECT_ANSWER = new int[]{-7, -6, -1, 0, 1, 1, 4, 6, 8, 10, 18, 99};
+
     @Override
     protected int[] getCorrectArray() {
-        return new int[]{-7, -6, -1, 0, 1, 1, 4, 6, 8, 10, 18, 99};
+        return CORRECT_ANSWER;
     }
 
     @Override
