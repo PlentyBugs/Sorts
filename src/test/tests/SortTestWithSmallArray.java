@@ -1,4 +1,6 @@
-package test;
+package test.tests;
+
+import test.SortTest;
 
 public class SortTestWithSmallArray extends SortTest {
 

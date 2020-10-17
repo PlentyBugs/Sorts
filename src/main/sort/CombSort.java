@@ -3,6 +3,7 @@ package main.sort;
 public class CombSort implements SortAlgorithm {
     @Override
     public int[] sort(int[] array) {
+        if (array == null) return null;
         int n = array.length;
         int gap = n;
         boolean swapped = true;

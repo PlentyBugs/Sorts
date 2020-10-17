@@ -5,6 +5,7 @@ public class TimSort implements MergeSort, InsertionSort {
 
     @Override
     public int[] sort(int[] array) {
+        if (array == null) return null;
         // todo: Implement TimSort
         return array;
     }

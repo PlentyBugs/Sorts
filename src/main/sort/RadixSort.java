@@ -3,6 +3,7 @@ package main.sort;
 public class RadixSort implements SortAlgorithm {
     @Override
     public int[] sort(int[] array) {
+        if (array == null) return null;
         for (int shift = Integer.SIZE - 1; shift > -1; shift--) {
             int[] tmp = new int[array.length];
             int j = 0;

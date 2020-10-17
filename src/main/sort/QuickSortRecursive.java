@@ -3,6 +3,7 @@ package main.sort;
 public class QuickSortRecursive implements QuickSort {
     @Override
     public int[] sort(int[] array) {
+        if (array == null) return null;
         sort(array, 0, array.length - 1);
         return array;
     }

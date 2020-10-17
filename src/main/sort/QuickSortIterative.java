@@ -3,6 +3,7 @@ package main.sort;
 public class QuickSortIterative implements QuickSort {
     @Override
     public int[] sort(int[] array) {
+        if (array == null) return null;
         int start = 0;
         int end = array.length - 1;
 
