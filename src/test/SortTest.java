@@ -61,8 +61,82 @@ public class SortTest {
     }
 
     @Test
+    public void bubbleSortTest() {
+        sort(new BubbleSort());
+    }
+
+    @Test
+    public void shakerSortTest() {
+        sort(new ShakerSort());
+    }
+
+    @Test
+    public void gnomeSortTest() {
+        sort(new GnomeSort());
+    }
+
+    @Test
+    public void cycleSortTest() {
+        sort(new CycleSort());
+    }
+
+    @Test
+    public void pigeonholeSortTest() {
+        sort(new PigeonholeSort());
+    }
+
+    @Test
+    public void combSortTest() {
+        sort(new CombSort());
+    }
+
+    @Test
+    public void insertionSortIterativeTest() {
+        sort(new InsertionSortIterative());
+    }
+
+    @Test
+    public void selectionSortTest() {
+        sort(new SelectionSort());
+    }
+
+    @Test
+    public void pancakeSortTest() {
+        sort(new PancakeSort());
+    }
+
+    @Test
     public void heapSortTest() {
         sort(new HeapSort());
+    }
+
+    @Test
+    public void mergeSortRecursiveTest() {
+        sort(new MergeSortRecursive());
+    }
+
+    @Test
+    public void quickSortIterativeTest() {
+        sort(new QuickSortIterative());
+    }
+
+    @Test
+    public void quickSortRecursiveTest() {
+        sort(new QuickSortRecursive());
+    }
+
+    @Test
+    public void quickSortDoublePivotTest() {
+        sort(new QuickSortDualPivot());
+    }
+
+    @Test
+    public void radixSortTest() {
+        sort(new RadixSort());
+    }
+
+    protected int[] getCorrectArray() {
+        return new int[0];
     }
 
     @Test
