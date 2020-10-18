@@ -4,7 +4,7 @@ import main.sort.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class SortTest {
+public abstract class SortTest {
     protected void sort(SortAlgorithm algorithm) {
         int[] correctArray = getCorrectArray();
         int[] array = getUnsortedArray();
@@ -87,11 +87,7 @@ public class SortTest {
         sort(new RadixSort());
     }
 
-    protected int[] getCorrectArray() {
-        return new int[0];
-    }
+    protected abstract int[] getCorrectArray();
 
-    protected int[] getUnsortedArray() {
-        return new int[0];
-    }
+    protected abstract int[] getUnsortedArray();
 }
