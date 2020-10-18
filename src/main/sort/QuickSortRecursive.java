@@ -4,6 +4,7 @@ public class QuickSortRecursive implements QuickSort {
     @Override
     public int[] sort(int[] array) {
         if (array == null) return null;
+        if (array.length == 0) return array;
         sort(array, 0, array.length - 1);
         return array;
     }

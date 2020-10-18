@@ -6,6 +6,7 @@ public class PancakeSort implements SortAlgorithm {
     @Override
     public int[] sort(int[] array) {
         if (array == null) return null;
+        if (array.length == 0) return array;
         Stack<Integer> flipStack = new Stack<>();
         int n = array.length;
         int dir = 1;

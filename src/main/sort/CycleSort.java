@@ -4,6 +4,7 @@ public class CycleSort implements SortAlgorithm {
     @Override
     public int[] sort(int[] array) {
         if (array == null) return null;
+        if (array.length == 0) return array;
         int n = array.length;
         for (int cycle_start = 0; cycle_start <= n - 2; cycle_start++) {
             int item = array[cycle_start];

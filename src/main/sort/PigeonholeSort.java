@@ -6,6 +6,7 @@ public class PigeonholeSort implements SortAlgorithm {
     @Override
     public int[] sort(int[] array) {
         if (array == null) return null;
+        if (array.length == 0) return array;
         int min = array[0];
         int max = array[0];
         int range, i, j, index;

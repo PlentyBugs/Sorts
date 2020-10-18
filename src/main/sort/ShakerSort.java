@@ -4,6 +4,7 @@ public class ShakerSort implements SortAlgorithm {
     @Override
     public int[] sort(int[] array) {
         if (array == null) return null;
+        if (array.length == 0) return array;
         int left = 0;
         int right = array.length;
         while (left <= right) {

@@ -4,6 +4,7 @@ public class RadixSort implements SortAlgorithm {
     @Override
     public int[] sort(int[] array) {
         if (array == null) return null;
+        if (array.length == 0) return array;
         for (int shift = Integer.SIZE - 1; shift > -1; shift--) {
             int[] tmp = new int[array.length];
             int j = 0;
