@@ -5,7 +5,7 @@ import test.SortTest;
 
 import java.util.Arrays;
 
-public class SortTestWithBigArray extends SortTest {
+public class SortTestWithBigArray implements SortTest {
 
     private static int[] correctAnswer;
     private static int[] unsortedArray;
@@ -24,12 +24,12 @@ public class SortTestWithBigArray extends SortTest {
     }
 
     @Override
-    protected int[] getCorrectArray() {
+    public int[] getCorrectArray() {
         return correctAnswer;
     }
 
     @Override
-    protected int[] getUnsortedArray() {
+    public int[] getUnsortedArray() {
         int[] array = new int[SIZE];
         System.arraycopy(unsortedArray, 0, array, 0, SIZE);
         return array;

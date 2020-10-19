@@ -2,15 +2,15 @@ package test.tests;
 
 import test.SortTest;
 
-public class SortTestWithNull extends SortTest {
+public class SortTestWithNull implements SortTest {
 
     @Override
-    protected int[] getCorrectArray() {
+    public int[] getCorrectArray() {
         return null;
     }
 
     @Override
-    protected int[] getUnsortedArray() {
+    public int[] getUnsortedArray() {
         return null;
     }
 }

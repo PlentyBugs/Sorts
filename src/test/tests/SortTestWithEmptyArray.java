@@ -2,14 +2,14 @@ package test.tests;
 
 import test.SortTest;
 
-public class SortTestWithEmptyArray extends SortTest {
+public class SortTestWithEmptyArray implements SortTest {
     @Override
-    protected int[] getCorrectArray() {
+    public int[] getCorrectArray() {
         return new int[0];
     }
 
     @Override
-    protected int[] getUnsortedArray() {
+    public int[] getUnsortedArray() {
         return new int[0];
     }
 }

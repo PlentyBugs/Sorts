@@ -4,8 +4,8 @@ import main.sort.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public abstract class SortTest {
-    protected void sort(SortAlgorithm algorithm) {
+public interface SortTest {
+    default void sort(SortAlgorithm algorithm) {
         int[] correctArray = getCorrectArray();
         int[] array = getUnsortedArray();
         Assertions.assertArrayEquals(algorithm.sort(array), correctArray); // Test for a given array
@@ -13,81 +13,81 @@ public abstract class SortTest {
     }
 
     @Test
-    public void bubbleSortTest() {
+    default void bubbleSortTest() {
         sort(new BubbleSort());
     }
 
     @Test
-    public void shakerSortTest() {
+    default void shakerSortTest() {
         sort(new ShakerSort());
     }
 
     @Test
-    public void gnomeSortTest() {
+    default void gnomeSortTest() {
         sort(new GnomeSort());
     }
 
     @Test
-    public void cycleSortTest() {
+    default void cycleSortTest() {
         sort(new CycleSort());
     }
 
     @Test
-    public void pigeonholeSortTest() {
+    default void pigeonholeSortTest() {
         sort(new PigeonholeSort());
     }
 
     @Test
-    public void combSortTest() {
+    default void combSortTest() {
         sort(new CombSort());
     }
 
     @Test
-    public void insertionSortIterativeTest() {
+    default void insertionSortIterativeTest() {
         sort(new InsertionSortIterative());
     }
 
     @Test
-    public void selectionSortTest() {
+    default void selectionSortTest() {
         sort(new SelectionSort());
     }
 
     @Test
-    public void pancakeSortTest() {
+    default void pancakeSortTest() {
         sort(new PancakeSort());
     }
 
     @Test
-    public void heapSortTest() {
+    default void heapSortTest() {
         sort(new HeapSort());
     }
 
     @Test
-    public void mergeSortRecursiveTest() {
+    default void mergeSortRecursiveTest() {
         sort(new MergeSortRecursive());
     }
 
     @Test
-    public void quickSortIterativeTest() {
+    default void quickSortIterativeTest() {
         sort(new QuickSortIterative());
     }
 
     @Test
-    public void quickSortRecursiveTest() {
+    default void quickSortRecursiveTest() {
         sort(new QuickSortRecursive());
     }
 
     @Test
-    public void quickSortDoublePivotTest() {
+    default void quickSortDoublePivotTest() {
         sort(new QuickSortDualPivot());
     }
 
     @Test
-    public void radixSortTest() {
+    default void radixSortTest() {
         sort(new RadixSort());
     }
 
-    protected abstract int[] getCorrectArray();
+    int[] getCorrectArray();
 
-    protected abstract int[] getUnsortedArray();
+    int[] getUnsortedArray();
 }
