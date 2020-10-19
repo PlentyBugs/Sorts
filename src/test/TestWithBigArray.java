@@ -1,11 +1,10 @@
-package test.tests;
+package test;
 
 import org.junit.jupiter.api.BeforeAll;
-import test.SortTest;
 
 import java.util.Arrays;
 
-public class SortTestWithBigArray implements SortTest {
+public class TestWithBigArray implements ArraySupplier {
 
     private static int[] correctAnswer;
     private static int[] unsortedArray;

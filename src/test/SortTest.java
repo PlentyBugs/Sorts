@@ -1,16 +1,9 @@
 package test;
 
 import main.sort.*;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public interface SortTest {
-    default void sort(SortAlgorithm algorithm) {
-        int[] correctArray = getCorrectArray();
-        int[] array = getUnsortedArray();
-        Assertions.assertArrayEquals(algorithm.sort(array), correctArray); // Test for a given array
-        Assertions.assertArrayEquals(array, correctArray); // Test for a returning array
-    }
+public interface SortTest extends ArraySupplier {
 
     @Test
     default void bubbleSortTest() {
@@ -87,7 +80,5 @@ public interface SortTest {
         sort(new RadixSort());
     }
 
-    int[] getCorrectArray();
-
-    int[] getUnsortedArray();
+    void sort(SortAlgorithm algorithm);
 }

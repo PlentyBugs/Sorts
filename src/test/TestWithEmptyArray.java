@@ -1,8 +1,6 @@
-package test.tests;
+package test;
 
-import test.SortTest;
-
-public class SortTestWithEmptyArray implements SortTest {
+public class TestWithEmptyArray implements ArraySupplier {
     @Override
     public int[] getCorrectArray() {
         return new int[0];
