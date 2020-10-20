@@ -1,4 +1,4 @@
-package test.testImmutable;
+package test.tests.testImmutable;
 
 import test.SortTestImmutable;
 import test.TestWithNull;

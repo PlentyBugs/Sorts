@@ -1,4 +1,4 @@
-package test.testMutable;
+package test.tests.testMutable;
 
 import test.SortTestMutable;
 import test.TestWithBigArray;
