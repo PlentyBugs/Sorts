@@ -1,4 +1,4 @@
-package main.sort;
+package main.sort.mutable;
 
 public class RadixSort implements SortAlgorithm {
     @Override

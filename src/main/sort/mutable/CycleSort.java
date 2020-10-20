@@ -1,4 +1,4 @@
-package main.sort;
+package main.sort.mutable;
 
 public class CycleSort implements SortAlgorithm {
     @Override

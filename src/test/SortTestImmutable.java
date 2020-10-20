@@ -1,6 +1,6 @@
 package test;
 
-import main.sort.SortAlgorithm;
+import main.sort.mutable.SortAlgorithm;
 import org.junit.jupiter.api.Assertions;
 
 public interface SortTestImmutable extends SortTest {

@@ -1,6 +1,6 @@
 package main;
 
-import main.sort.*;
+import main.sort.mutable.*;
 
 public class Main {
     public static void main(String[] args) {

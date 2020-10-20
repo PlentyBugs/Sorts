@@ -1,4 +1,4 @@
-package main.sort;
+package main.sort.mutable;
 
 import java.util.Stack;
 

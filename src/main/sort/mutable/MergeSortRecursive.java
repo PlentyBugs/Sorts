@@ -1,4 +1,4 @@
-package main.sort;
+package main.sort.mutable;
 
 public class MergeSortRecursive implements MergeSort {
 

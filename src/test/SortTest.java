@@ -1,6 +1,6 @@
 package test;
 
-import main.sort.*;
+import main.sort.mutable.*;
 import org.junit.jupiter.api.Test;
 
 public interface SortTest extends ArraySupplier {

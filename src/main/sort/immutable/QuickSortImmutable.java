@@ -1,6 +1,6 @@
-package main.sort;
+package main.sort.immutable;
 
-public interface QuickSort extends SortAlgorithm {
+public interface QuickSortImmutable extends SortAlgorithmImmutable {
 
     default int partition(int[] array, int left, int right) {
         int pivot = array[right];

@@ -1,4 +1,4 @@
-package main.sort;
+package main.sort.mutable;
 
 public interface InsertionSort extends SortAlgorithm {
 

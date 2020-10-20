@@ -1,18 +1,17 @@
-package main.sort;
+package main.sort.mutable;
 
-public class TimSort implements MergeSort, InsertionSort {
-    private final static int RUN = 32;
+public class InsertionSortIterative implements InsertionSort {
 
     @Override
     public int[] sort(int[] array) {
         if (array == null) return null;
         if (array.length == 0) return array;
-        // todo: Implement TimSort
+        sort(array, 0, array.length);
         return array;
     }
 
     @Override
     public String toString() {
-        return "TimSort";
+        return "Insertion Sort";
     }
 }
