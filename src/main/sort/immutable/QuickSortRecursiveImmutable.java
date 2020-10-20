@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.QuickSortRecursive;
 
-public class QuickSortRecursiveImmutable implements QuickSortImmutable {
-    public final QuickSortRecursive sort;
+public class QuickSortRecursiveImmutable extends QuickSortImmutable {
+    private final QuickSortRecursive sort;
 
     public QuickSortRecursiveImmutable() {
         sort = new QuickSortRecursive();
     }
 
     @Override
-    public QuickSortRecursive getSort() {
+    protected QuickSortRecursive getSort() {
         return sort;
     }
 

@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.CombSort;
 
-public class CombSortImmutable implements SortAlgorithmImmutable {
-    public final CombSort sort;
+public class CombSortImmutable extends SortAlgorithmImmutable {
+    private final CombSort sort;
 
     public CombSortImmutable() {
         sort = new CombSort();
     }
 
     @Override
-    public CombSort getSort() {
+    protected CombSort getSort() {
         return sort;
     }
 

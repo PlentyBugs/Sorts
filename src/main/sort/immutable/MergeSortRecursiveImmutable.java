@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.MergeSortRecursive;
 
-public class MergeSortRecursiveImmutable implements SortAlgorithmImmutable {
-    public final MergeSortRecursive sort;
+public class MergeSortRecursiveImmutable extends SortAlgorithmImmutable {
+    private final MergeSortRecursive sort;
 
     public MergeSortRecursiveImmutable() {
         sort = new MergeSortRecursive();
     }
 
     @Override
-    public MergeSortRecursive getSort() {
+    protected MergeSortRecursive getSort() {
         return sort;
     }
 

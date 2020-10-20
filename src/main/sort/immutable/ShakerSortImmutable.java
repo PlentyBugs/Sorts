@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.ShakerSort;
 
-public class ShakerSortImmutable implements SortAlgorithmImmutable {
-    public final ShakerSort sort;
+public class ShakerSortImmutable extends SortAlgorithmImmutable {
+    private final ShakerSort sort;
 
     public ShakerSortImmutable() {
         sort = new ShakerSort();
     }
 
     @Override
-    public ShakerSort getSort() {
+    protected ShakerSort getSort() {
         return sort;
     }
 

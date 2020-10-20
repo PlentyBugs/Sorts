@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.HeapSort;
 
-public class HeapSortImmutable implements SortAlgorithmImmutable {
-    public final HeapSort sort;
+public class HeapSortImmutable extends SortAlgorithmImmutable {
+    private final HeapSort sort;
 
     public HeapSortImmutable() {
         sort = new HeapSort();
     }
 
     @Override
-    public HeapSort getSort() {
+    protected HeapSort getSort() {
         return sort;
     }
 

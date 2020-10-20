@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.BubbleSort;
 
-public class BubbleSortImmutable implements SortAlgorithmImmutable {
-    public final BubbleSort sort;
+public class BubbleSortImmutable extends SortAlgorithmImmutable {
+    private final BubbleSort sort;
 
     public BubbleSortImmutable() {
         sort = new BubbleSort();
     }
 
     @Override
-    public BubbleSort getSort() {
+    protected BubbleSort getSort() {
         return sort;
     }
 

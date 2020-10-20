@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.CycleSort;
 
-public class CycleSortImmutable implements SortAlgorithmImmutable {
-    public final CycleSort sort;
+public class CycleSortImmutable extends SortAlgorithmImmutable {
+    private final CycleSort sort;
 
     public CycleSortImmutable() {
         sort = new CycleSort();
     }
 
     @Override
-    public CycleSort getSort() {
+    protected CycleSort getSort() {
         return sort;
     }
 

@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.QuickSortDualPivot;
 
-public class QuickSortDualPivotImmutable implements QuickSortImmutable {
-    public final QuickSortDualPivot sort;
+public class QuickSortDualPivotImmutable extends QuickSortImmutable {
+    private final QuickSortDualPivot sort;
 
     public QuickSortDualPivotImmutable() {
         sort = new QuickSortDualPivot();
     }
 
     @Override
-    public QuickSortDualPivot getSort() {
+    protected QuickSortDualPivot getSort() {
         return sort;
     }
 

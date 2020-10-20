@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.PigeonholeSort;
 
-public class PigeonholeSortImmutable implements SortAlgorithmImmutable {
-    public final PigeonholeSort sort;
+public class PigeonholeSortImmutable extends SortAlgorithmImmutable {
+    private final PigeonholeSort sort;
 
     public PigeonholeSortImmutable() {
         sort = new PigeonholeSort();
     }
 
     @Override
-    public PigeonholeSort getSort() {
+    protected PigeonholeSort getSort() {
         return sort;
     }
 

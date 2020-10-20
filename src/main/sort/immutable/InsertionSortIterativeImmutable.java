@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.InsertionSortIterative;
 
-public class InsertionSortIterativeImmutable implements SortAlgorithmImmutable {
-    public final InsertionSortIterative sort;
+public class InsertionSortIterativeImmutable extends SortAlgorithmImmutable {
+    private final InsertionSortIterative sort;
 
     public InsertionSortIterativeImmutable() {
         sort = new InsertionSortIterative();
     }
 
     @Override
-    public InsertionSortIterative getSort() {
+    protected InsertionSortIterative getSort() {
         return sort;
     }
 

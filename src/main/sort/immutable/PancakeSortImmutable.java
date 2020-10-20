@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.PancakeSort;
 
-public class PancakeSortImmutable implements SortAlgorithmImmutable {
-    public final PancakeSort sort;
+public class PancakeSortImmutable extends SortAlgorithmImmutable {
+    private final PancakeSort sort;
 
     public PancakeSortImmutable() {
         sort = new PancakeSort();
     }
 
     @Override
-    public PancakeSort getSort() {
+    protected PancakeSort getSort() {
         return sort;
     }
 

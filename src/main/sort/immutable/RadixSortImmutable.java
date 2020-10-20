@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.RadixSort;
 
-public class RadixSortImmutable implements SortAlgorithmImmutable {
-    public final RadixSort sort;
+public class RadixSortImmutable extends SortAlgorithmImmutable {
+    private final RadixSort sort;
 
     public RadixSortImmutable() {
         sort = new RadixSort();
     }
 
     @Override
-    public RadixSort getSort() {
+    protected RadixSort getSort() {
         return sort;
     }
 

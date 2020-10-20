@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.TimSort;
 
-public class TimSortImmutableImmutable implements SortAlgorithmImmutable {
-    public final TimSort sort;
+public class TimSortImmutableImmutable extends SortAlgorithmImmutable {
+    private final TimSort sort;
 
     public TimSortImmutableImmutable() {
         sort = new TimSort();
     }
 
     @Override
-    public TimSort getSort() {
+    protected TimSort getSort() {
         return sort;
     }
 

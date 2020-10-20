@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.SelectionSort;
 
-public class SelectionSortImmutable implements SortAlgorithmImmutable {
-    public final SelectionSort sort;
+public class SelectionSortImmutable extends SortAlgorithmImmutable {
+    private final SelectionSort sort;
 
     public SelectionSortImmutable() {
         sort = new SelectionSort();
     }
 
     @Override
-    public SelectionSort getSort() {
+    protected SelectionSort getSort() {
         return sort;
     }
 

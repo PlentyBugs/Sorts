@@ -2,15 +2,15 @@ package main.sort.immutable;
 
 import main.sort.mutable.GnomeSort;
 
-public class GnomeSortImmutable implements SortAlgorithmImmutable {
-    public final GnomeSort sort;
+public class GnomeSortImmutable extends SortAlgorithmImmutable {
+    private final GnomeSort sort;
 
     public GnomeSortImmutable() {
         sort = new GnomeSort();
     }
 
     @Override
-    public GnomeSort getSort() {
+    protected GnomeSort getSort() {
         return sort;
     }
 
